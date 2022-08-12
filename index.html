@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- link de css -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- link de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&family=Roboto+Mono:wght@100;300;600&display=swap"
+        rel="stylesheet">
+    <title>Tienda de Muebles</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <a href="#imgPrincipal" class="logo">Tienda de Muebles</a>
+            <div id="btn-actualizarCarrito">
+
+            </div>
+        </div>
+
+        <div class="enlaces">
+            <nav>
+                <a href="#imgPrincipal" class="links">Inicio</a>
+                <a href="#productos" class="links">Productos</a>
+                <a href="#sucursales" class="links">Sucursales</a>
+                <a href="#politicasEnvio" class="links">Calcular Envío</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="imgPrincipal">
+        <h1 class="titulo">¡Bienvenidos/as!</h1>
+    </section>
+
+    <section id="productos">
+        <div class="productos-text">
+            <h2 class="titulo-seccion">Productos</h2>
+            <button class="btn btn-productos-text" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Ver carrito</button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Productos seleccionados</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" id="carrito-container"></div>
+            </div>
+        </div>
+        <div id="productos-container"></div>
+    </section>
+
+    <section id="sucursales">
+        <h2 class="titulo-seccion">Sucursales</h2>
+        <div id="sucursal">
+            <button type="button" class="btn btn-sucursal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Ver sucursales
+            </button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Nuestras sucursales</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="modal-body"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-sucursal" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="politicasEnvio" class="text-center">
+        <h2 class="titulo-seccion">Calcular Envío</h2>
+        <p>Seleccioná para saber el costo del envío:</p>
+        <select name="localidades" id="localidad">
+        </select>
+        <div class="localidades" id="localidades">
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="redes">
+            <h4 class="titulo-footer">Redes Sociales</h4>
+            <div class="container-redes">
+                <a href="https://www.instagram.com/">Instagram</a>
+                <a href="https://www.facebook.com/">Facebook</a>
+                <a href="https://www.tiktok.com/">Tiktok</a>
+            </div>
+
+        </div>
+
+        <div class="contactar">
+            <h4 class="titulo-footer">Contactános</h4>
+            <div class="container-redes">
+                <p>+549 1145782316</p>
+                <p>tiendademuebles@gmail.com</p>
+                <p>Lanús Oeste</p>
+            </div>
+        </div>
+
+        <div class="by">
+            <p>Copyright 2022 &copy; - Tienda de Muebles</p>
+            <p>Desarrollado por Alejo Inc.</p>
+        </div>
+    </footer>
+
+
+    <script src="./js/localStorage.js"></script>
+    <script src="./js/funciones.js"></script>
+    <script src="./js/renders.js"></script>
+    <script src="./js/sucursales.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
+

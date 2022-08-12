@@ -1,0 +1,51 @@
+[{
+        "id": 1,
+        "localidad": "Lanús",
+        "precio": 1000
+    },
+    {
+        "id": 2,
+        "localidad": "Avellaneda",
+        "precio": 1100
+    },
+    {
+        "id": 3,
+        "localidad": "Lomas de Zamora",
+        "precio": 1200
+    },
+    {
+        "id": 4,
+        "localidad": "Banfield",
+        "precio": 1300
+    }, 
+    {
+        "id": 5,
+        "localidad": "Recoleta",
+        "precio": 900
+    }, 
+    {
+        "id": 6,
+        "localidad": "Microcentro",
+        "precio": 400
+    }, 
+    {
+        "id": 7,
+        "localidad": "Belgrano",
+        "precio": 800
+    }, 
+    {
+        "id": 8,
+        "localidad": "Olivos",
+        "precio": 700
+    }, 
+    {
+        "id": 9,
+        "localidad": "Retiro",
+        "precio": 600
+    }, 
+    {
+        "id": 10,
+        "localidad": "Puerto Madero",
+        "precio": 500
+    }
+]
