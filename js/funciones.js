@@ -81,3 +81,11 @@ function terminarCompra() {
     })
 }
 
+function mostrarSpinner() {
+    let contenido = `<div class="text-center">
+        <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>`;
+    document.getElementById("localidades").innerHTML = contenido;
+}

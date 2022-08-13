@@ -100,14 +100,15 @@ function mostrarLocalidadSeleccionada() {
     select.addEventListener(`change`, function () {
         document.getElementById("selecciona").disabled = true;
         let selectedOption = this.options[select.selectedIndex];
-        let contenido = `<div class="alert msj-localidad w-50" role="alert">`;
-        contenido += `El envio a ` + selectedOption.text + ` tiene un valor de $` + selectedOption.value;
-        contenido += `</div>`;
-        document.getElementById("localidades").innerHTML = contenido;
+        mostrarSpinner();
+        setTimeout(() => {
+            let contenido = `<div class="alert msj-localidad w-50" role="alert">`;
+            contenido += `El envio a ` + selectedOption.text + ` tiene un valor de $` + selectedOption.value;
+            contenido += `</div>`;
+            document.getElementById("localidades").innerHTML = contenido;
+        }, 2000);
     })
-
 }
-
 
 renderizarProductos();
 actualizarCantidadCarrito();
